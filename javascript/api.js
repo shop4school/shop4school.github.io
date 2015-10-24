@@ -5,7 +5,7 @@ $('button').click(function() {
     var url = "http://api.target.com/items/v3/";
     var data = {
       product_id : "055-02-3741",
-      ?id_type : "dpci",
+      id_type : "dpci",
       store_id : "530",
       fields : "ids,descriptions,locations,pricing,images",
       mode : "online",
