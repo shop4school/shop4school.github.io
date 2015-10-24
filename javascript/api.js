@@ -18,10 +18,10 @@ $('button').click(function() {
       var callback = function(response) {
 
         var responseHTML = '<ul class="tbu">';
-        var responseHTML += '<li class="detail">' + product_composite_response.items.online_description.value + '</li>'
-        var responseHTML += '<li class="detail">' + product_composite_response.items.online_price.current_price + '</li>'
-        var responseHTML += '<li class="detail">' + product_composite_response.items.online_price.original_price + '</li>'
-        var responseHTML += '<li class="detail">' + product_composite_response.items.image.internal_primary_image_url + '</li>'
+        var responseHTML += '<li class="detail">' + product_composite_response.items.online_description.value + '</li>';
+        var responseHTML += '<li class="detail">' + product_composite_response.items.online_price.current_price + '</li>';
+        var responseHTML += '<li class="detail">' + product_composite_response.items.online_price.original_price + '</li>';
+        var responseHTML += '<li class="detail">' + product_composite_response.items.image.internal_primary_image_url + '</li>';
 
       };
 
