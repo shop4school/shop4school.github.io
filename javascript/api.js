@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-$('button').click(function() {
+$('.button').click(function() {
 
     var url = "http://api.target.com/items/v3/055-02-3741";
     var data = {
