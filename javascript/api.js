@@ -15,7 +15,7 @@ $('button').click(function() {
     //   key : '1Kfdqvy6wHmvJ4LDyAVOl7saCBoKHcSb'
     // };
 
-    $.getJSON(url,function (response.addHeader("Access-Control-Allow-Origin", "*");) {
+    $.getJSON(url,function (response.addHeader("Access-Control-Allow-Origin", "*")) {
 
 
       var callback = function(response) {
