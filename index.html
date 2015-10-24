@@ -1,13 +1,15 @@
 <html>
 <head>
   <title> Back to School 2015 </title>
+<meta charset="utf-8"
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="javascript/api.js"></script>
-<link rel="stylesheet" type="text/css" href="stylesheets/target.css">
+<!-- <link rel="stylesheet" type="text/css" href="stylesheets/target.css"> -->
 <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
 
 </head>
 <body>
+  <br> <br>
   <header>
     <img src="imgs/logo2.png" alt="target-logo" class="header-img fl-l">
     <nav class="navbar">
@@ -26,25 +28,71 @@
     <h1 class="col-5 pd-l fl-l"> Mr. Bensch's 3rd Grade School Supply List </h1>
     <img src="imgs/Blank-profile.jpg" class="fl-r pd-r main-image">
   </section>
-  <section class="main-list cl-b">
-    <ul class="list-header col-12">
-      <li class="col-1"> <input type="checkbox" class="selected"> Select All </li>
-      <li class="col-2"> Thumb. Image </li>
-      <li class="col-4"> Item title and description> </li>
-      <li class="col-1"> Quantity Required </li>
-      <li class="col-1"> Quantity Ordered </li>
-      <li class="col-2"> Price </li>
-    </ul>
 
-    <ul class="items col-12">
-      <li class="col-1"> <input type="checkbox" class="selected"> Select All </li>
-      <li class="col-2"> Image1</li>
-      <li class="col-4"> 3-ringer Blue Binder> </li>
-      <li class="col-1"> 1 </li>
-      <li class="col-1"> 1 </li>
-      <li class="col-2"> $5.99 </li>
-    </ul>
+  <section class="main-list cl-b col-12">
+
+    <div class="list-header">
+      <div class="h-checkbox cellnb"> <input type="checkbox" class="select-all"> Select All </div>
+      <div class="h-image cellnb"> Thumb. Image </div>
+      <div class="h-item cellnb"> Item Title & Description </div>
+      <div class="h-quantR cellnb"> Quanity Required </div>
+      <div class="h-quantO cellnb"> Quantiy Ordered </div>
+      <div class="h-price cellnb"> Price </div>
+    </div>
+    <div class="items-list">
+      <div class="checkbox cellb"> <input type="checkbox" class="item-checkbox">  </div>
+      <div class="image cellb"> <img src="imgs/binder.jpeg" alt="binder" class="item-image"/> </div>
+      <div class="item cellb"> <a href="#" /> Faux Leather 3-Ring Binder - Lavender (12x12") </a> </div>
+      <div class="quantR cellb"> 1 </div>
+      <div class="quantO cellb">
+          <select name="quant-selected">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+      </div>
+      <div class="price cellb"> 16.79 </div>
+    </div>
+    <div class="items-list">
+      <div class="checkbox cellb"> <input type="checkbox" class="item-checkbox">  </div>
+      <div class="image cellb"> <img src="imgs/binder.jpeg" alt="binder" class="item-image"/> </div>
+      <div class="item cellb"> <a href="#" /> Faux Leather 3-Ring Binder - Lavender (12x12") </a> </div>
+      <div class="quantR cellb"> 1 </div>
+      <div class="quantO cellb">
+          <select name="quant-selected">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+      </div>
+      <div class="price cellb"> 16.79 </div>
+    </div>
+        <div class="items-list">
+      <div class="checkbox cellb"> <input type="checkbox" class="item-checkbox">  </div>
+      <div class="image cellb"> <img src="imgs/binder.jpeg" alt="binder" class="item-image"/> </div>
+      <div class="item cellb"> <a href="#" /> Faux Leather 3-Ring Binder - Lavender (12x12") </a> </div>
+      <div class="quantR cellb"> 1 </div>
+      <div class="quantO cellb">
+          <select name="quant-selected">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+      </div>
+      <div class="price cellb"> 16.79 </div>
+    </div>
+
+    <br>
+
   </section>
-<button class="button">CHECKOUT</button>
+
+<section>
+  <div class="col-12">
+    <button class="button">CHECKOUT</button>
+  </div>
+</section>
 </body>
 </html>
