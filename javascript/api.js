@@ -2,8 +2,10 @@ $(document).ready(function () {
 
 $('button').click(function() {
 
+
+
     var product_id = "055-02-3741"
-    var url = 'https://api.target.com/items/v3/' + product_id + '?id_type=dpci&store_id=530&fields=ids,descriptions,locations,pricing,images&mode=online&key=1Kfdqvy6wHmvJ4LDyAVOl7saCBoKHcSb';
+    var url = 'https://api.target.com/items/v3/' + product_id + '?id_type=dpci&store_id=530&fields=ids,descriptions,locations,pricing,images&mode=online&key=1Kfdqvy6wHmvJ4LDyAVOl7saCBoKHcSb?jsoncallback=?';
 
 
     // var data = {
