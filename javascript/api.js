@@ -16,17 +16,17 @@ $('button').click(function() {
     // };
 
     $.getJSON(url,function (response) {
+      console.log(response);
 
+      // var callback = function(response) {
 
-      var callback = function(response) {
+      //   var responseHTML = '<ul class="tbu">';
+      //   responseHTML += '<li class="detail">' + product_composite_response.items.online_description.value + '</li>';
+      //   responseHTML += '<li class="detail">' + product_composite_response.items.online_price.current_price + '</li>';
+      //   responseHTML += '<li class="detail">' + product_composite_response.items.online_price.original_price + '</li>';
+      //   responseHTML += '<li class="detail">' + product_composite_response.items.image.internal_primary_image_url + '</li>';
 
-        var responseHTML = '<ul class="tbu">';
-        responseHTML += '<li class="detail">' + product_composite_response.items.online_description.value + '</li>';
-        responseHTML += '<li class="detail">' + product_composite_response.items.online_price.current_price + '</li>';
-        responseHTML += '<li class="detail">' + product_composite_response.items.online_price.original_price + '</li>';
-        responseHTML += '<li class="detail">' + product_composite_response.items.image.internal_primary_image_url + '</li>';
-
-      };
+      // };
 
     }); // end getJSON
 
