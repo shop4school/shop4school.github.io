@@ -2,17 +2,20 @@ $(document).ready(function () {
 
 $('button').click(function() {
 
-    var url = 'https://api.target.com/items/v3/055-02-3741';
-    var data = {
-      id_type : 'dpci',
-      store_id : '530',
-      fields : 'ids,descriptions,locations,pricing,images',
-      // fields : ['ids','descriptions','locations','pricing','images'],
-      mode : 'online',
-      key : '1Kfdqvy6wHmvJ4LDyAVOl7saCBoKHcSb'
-    };
+    var product_id = "055-02-3741"
+    var url = 'https://api.target.com/items/v3/' + product_id + '?id_type=dpci&store_id=530&fields=ids,descriptions,locations,pricing,images&mode=online&key=1Kfdqvy6wHmvJ4LDyAVOl7saCBoKHcSb';
 
-    $.getJSON(url, data, function (response) {
+
+    // var data = {
+    //   id_type : 'dpci',
+    //   store_id : '530',
+    //   fields : 'ids,descriptions,locations,pricing,images',
+    //   // fields : ['ids','descriptions','locations','pricing','images'],
+    //   mode : 'online',
+    //   key : '1Kfdqvy6wHmvJ4LDyAVOl7saCBoKHcSb'
+    // };
+
+    $.getJSON(url,function (response) {
 
 
       var callback = function(response) {
