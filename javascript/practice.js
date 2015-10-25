@@ -16,9 +16,10 @@ $(document).ready(function () {
         $("#output-3").html(data.product_composite_response.items[0].online_price.current_price);
         $("#output-4").html(
           '<img id="default" src="">'
+             ); // end img output
           document.getElementById("default").setAttribute("id",img).setAttribute("src",img);
 
-          ); // end img output
+
         }, //end success function
 
        error: function(e) {
