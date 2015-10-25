@@ -9,8 +9,8 @@ $(document).ready(function () {
       dataType: 'jsonp',
 
       succes: function(data) {
-        console.log('success', data);
-      } //end success function
+        console.log(data);
+      }, //end success function
 
       error: function(e) {
         console.log(e.message);
