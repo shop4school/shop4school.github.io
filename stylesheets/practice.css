@@ -1,0 +1,21 @@
+thumb-img {
+  height: 1.5em;
+  position: relative;
+  display: inline-block;
+  clear: both;
+}
+
+description {
+  height: 1.5em;
+  position: relative;
+  display: inline-block;
+  line-height: 1.5em;
+
+}
+
+price {
+  height: 1.5em;
+  position: relative;
+  display: inline-block;
+  line-height: 1.5em;
+}
