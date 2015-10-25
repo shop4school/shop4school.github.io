@@ -106,9 +106,9 @@ header{
 .button{
   position: relative;
   display: block;
-  font-size: 2em;
+  font-size: 1.5em;
   color: white;
-  width: 25%;
+  width: 30%;
   margin:auto;
   height: 50px;
   opacity: 0.8;
@@ -128,6 +128,10 @@ header{
   opacity: 0.8;
   background-color: gray;
   color: #000000;
+}
+.donate{
+  font-size: 1em;
+  background-color: green;
 }
 .button-teacher:hover{
   opacity: 1;
