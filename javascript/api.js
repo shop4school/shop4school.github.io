@@ -17,7 +17,7 @@ $('button').click(function() {
     //   key : '1Kfdqvy6wHmvJ4LDyAVOl7saCBoKHcSb'
     // };
 
-    $.getJSON(url,function (response) {
+    $.getJSON(url, null, function (response) {
       console.log(response);
 
       // var callback = function(response) {
