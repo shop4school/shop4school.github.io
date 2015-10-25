@@ -8,18 +8,17 @@ $(document).ready(function () {
       consentType: "application/json",
       dataType: 'jsonp',
 
-      if (status === succes) { function(json) {
+      success: function(json) {
         console.log(json);
         $("#output-1").html(json.items.online_description.value);
         $("#output-2").html(json.items.online_price.current_price);
         $("#output-3").html(json.items.online_price.original_price);
         $("#output-4").html(json.items.image.internal_primary_image_url);
-      }, //end success function
+        }, //end success function
 
-      else { function(e) {
+       error: function(e) {
         console.log(e.message);
-      } //end error function
-      } //end if
+        } //end error function
 
     }); // end AJAX
 
