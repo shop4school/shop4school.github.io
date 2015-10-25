@@ -14,11 +14,11 @@ $(document).ready(function () {
         $("#output-2").html(data.product_composite_response.items[0].class_id);
         $("#output-3").html(data.product_composite_response.items[0].online_price.current_price);
 
-        var img-tag = new Image();
-        img-tag.src = data.product_composite_response.items[0].image.internal_primary_image_url;
-        img-tag.setAttribute("class", "thumb-img");
-        img-tag.setAttribute("alt", "effy");
-        document.getElementById("output-4").appendChild(img-tag);
+        var img_tag = new Image();
+        img_tag.src = data.product_composite_response.items[0].image.internal_primary_image_url;
+        img_tag.setAttribute("class", "thumb-img");
+        img_tag.setAttribute("alt", "effy");
+        document.getElementById("output-4").appendChild(img_tag);
 
 
         }, //end success function
