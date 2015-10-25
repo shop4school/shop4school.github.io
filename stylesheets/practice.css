@@ -1,0 +1,19 @@
+thumb-img {
+  max-height: 3em;
+  position: relative;
+  display: inline-block;
+  clear: both;
+}
+
+description {
+  height: 3em;
+  position: relative;
+  display: inline-block;
+
+}
+
+price {
+  height: 3em;
+  position: relative;
+  display: inline-block;
+}

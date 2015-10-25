@@ -22,9 +22,6 @@ $(document).ready(function () {
         // $("#output-3").html(data.product_composite_response.items[0].online_price.current_price);
 
 
-        var container = document.createElement("div");
-        container.setAttribute("class", "container");
-        container.innerHTML = (
 
             var img_tag = new Image();
             img_tag.src = data.product_composite_response.items[0].image.internal_primary_image_url;
@@ -41,8 +38,6 @@ $(document).ready(function () {
             div_a.innerHTML = "Price: " + data.product_composite_response.items[0].online_price.current_price;
             div_a.setAttribute("class", "price")
             document.getElementById("output-4").appendChild(div_a);
-
-          ); // end container inner HTML
 
 
         }, //end success function
