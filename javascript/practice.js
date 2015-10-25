@@ -1,5 +1,5 @@
 
-var array_of_items = {Tissues: 253-07-0129, Scissors: 081-22-0936, Glue: 081-06-1653, Crayons: 081-04-0343, Watercolor_Set: 081-04-0600, Markers: 081-04-1261, Pencils: 081-02-1857, Notebook: 081-01-1751, Erasers: 081-02-1505, Folders: 081-03-0706, Box: 081-06-2910, Soap: 049-00-1118, Bags: 253-01-0291};
+var array_of_items = {Tissues: "253-07-0129", Scissors: "081-22-0936", Glue: "081-06-1653", Crayons: "081-04-0343", Watercolor_Set: "081-04-0600", Markers: "081-04-1261", Pencils: "081-02-1857", Notebook: "081-01-1751", Erasers: "081-02-1505", Folders: "081-03-0706", Box: "081-06-2910", Soap: "049-00-1118", Bags: "253-01-0291"};
 
 
 var api_call = function(dpci) {
