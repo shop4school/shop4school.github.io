@@ -8,13 +8,13 @@ $(document).ready(function () {
       consentType: "application/json",
       dataType: 'jsonp',
 
-      success: function(json) {
-        console.log(json);
-        $("#output-1").html(json)
-        $("#output-1").html(json.product_composite_response.items[O].class_id);
-        $("#output-2").html(json.product_composite_response.items[O].online_price.current_price);
-        $("#output-3").html(json.product_composite_response.items[O].online_price.original_price);
-        $("#output-4").html(json.product_composite_response.items[O].image.internal_primary_image_url);
+      success: function(data) {
+        console.log(data);
+        $("#output-1").html(JSON.parse(data).product_composite_response.items[0].class_id)
+        // $("#output-1").html(json.product_composite_response.items[O].class_id);
+        // $("#output-2").html(json.product_composite_response.items[O].online_price.current_price);
+        // $("#output-3").html(json.product_composite_response.items[O].online_price.original_price);
+        // $("#output-4").html(json.product_composite_response.items[O].image.internal_primary_image_url);
         }, //end success function
 
        error: function(e) {
