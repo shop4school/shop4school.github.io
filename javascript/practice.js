@@ -23,7 +23,7 @@ $(document).ready(function () {
 
 
         var container = document.createElement("div");
-        container.setAttribute("class", "container")
+        container.setAttribute("class", "container");
         container.innerHTML = {
 
             var img_tag = new Image();
@@ -42,7 +42,7 @@ $(document).ready(function () {
             div_a.setAttribute("class", "price")
             document.getElementById("output-4").appendChild(div_a);
 
-          } // end container inner HTML
+          }; // end container inner HTML
 
 
         }, //end success function
