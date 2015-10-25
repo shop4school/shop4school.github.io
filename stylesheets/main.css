@@ -68,7 +68,7 @@ header{
   width:100%;
 }
 /*Table header formmating*/
-.cellb {display:table-cell; vertical-align: middle; border-top:1px solid; border-bottom: 1px solid; border-left: 1px solid; padding: 5 5 5 5}
+.cellb {display:table-cell; vertical-align: middle; border-top:1px solid; border-bottom: 1px solid; border-left: 1px solid; padding: 5 5 5 5; float:left; height:100px;}
 .cellnb {display:table-cell; vertical-align: middle; padding: 5 5 5 5; background-color: #cc0000; color:#ffffff;}
 
 .h-checkbox{width:10%;}
