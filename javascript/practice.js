@@ -22,20 +22,27 @@ $(document).ready(function () {
         // $("#output-3").html(data.product_composite_response.items[0].online_price.current_price);
 
 
-        var div_b = document.createElement("div");
-        div_b.innerHTML = "Description: " + data.product_composite_response.items[0].general_description;
-        document.getElementById("output-4").appendChild(div_b);
+        var container = document.createElement("div");
+        container.setAttribute("class", "container")
+        container.innerHTML = {
 
-        var div_a = document.createElement("div");
-        div_a.innerHTML = "Price: " + data.product_composite_response.items[0].online_price.current_price;
-        document.getElementById("output-4").appendChild(div_a);
+            var img_tag = new Image();
+            img_tag.src = data.product_composite_response.items[0].image.internal_primary_image_url;
+            img_tag.setAttribute("class", "thumb-img");
+            img_tag.setAttribute("alt", "effy");
+            document.getElementById("output-4").appendChild(img_tag);
 
+            var div_b = document.createElement("div");
+            div_b.innerHTML = "Description: " + data.product_composite_response.items[0].general_description;
+            div_b.setAttribute("class", "description")
+            document.getElementById("output-4").appendChild(div_b);
 
-        var img_tag = new Image();
-        img_tag.src = data.product_composite_response.items[0].image.internal_primary_image_url;
-        img_tag.setAttribute("class", "thumb-img");
-        img_tag.setAttribute("alt", "effy");
-        document.getElementById("output-4").appendChild(img_tag);
+            var div_a = document.createElement("div");
+            div_a.innerHTML = "Price: " + data.product_composite_response.items[0].online_price.current_price;
+            div_a.setAttribute("class", "price")
+            document.getElementById("output-4").appendChild(div_a);
+
+          } // end container inner HTML
 
 
         }, //end success function
