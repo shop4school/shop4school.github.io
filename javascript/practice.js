@@ -8,8 +8,12 @@ $(document).ready(function () {
       consentType: "application/json",
       dataType: 'jsonp',
 
-      succes: function(data) {
-        console.log(data);
+      succes: function(json) {
+        console.log(json);
+        $("#output").html(json.product_composite_response.items.online_description.value);
+        $("#output").html(json.product_composite_response.items.online_price.current_price);
+        $("#output").html(product_composite_response.items.online_price.original_price);
+        $("#output").html(json.product_composite_response.items.image.internal_primary_image_url);
       }, //end success function
 
       error: function(e) {
