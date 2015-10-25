@@ -24,18 +24,18 @@ $(document).ready(function () {
 
             var img_tag = new Image();
             img_tag.src = data.product_composite_response.items[0].image.internal_primary_image_url;
-            img_tag.setAttribute("class", "h-image cellnb");
+            img_tag.setAttribute("class", "image cellb");
             img_tag.setAttribute("alt", "effy");
             document.getElementById("main").appendChild(img_tag);
 
             var div_b = document.createElement("div");
             div_b.innerHTML = "Description: " + data.product_composite_response.items[0].general_description;
-            div_b.setAttribute("class", "h-item cellnb")
+            div_b.setAttribute("class", "item cellb")
             document.getElementById("main").appendChild(div_b);
 
             var div_a = document.createElement("div");
             div_a.innerHTML = "Price: " + data.product_composite_response.items[0].online_price.current_price;
-            div_a.setAttribute("class", "h-price cellnb")
+            div_a.setAttribute("class", "price cellb")
             document.getElementById("main").appendChild(div_a);
 
 
