@@ -16,10 +16,18 @@ $(document).ready(function () {
       dataType: 'jsonp',
 
       success: function(data) {
-        console.log(data);
-        $("#output-1").html(data.product_composite_response.items[0].general_description)
-        $("#output-2").html(data.product_composite_response.items[0].class_id);
-        $("#output-3").html(data.product_composite_response.items[0].online_price.current_price);
+        // console.log(data);
+        // $("#output-2").html("Item: " + key)
+        // $("#output-2").html("Description: " + data.product_composite_response.items[0].general_description)
+        // $("#output-3").html(data.product_composite_response.items[0].online_price.current_price);
+
+        var div_a = document.createElement("div");
+        div_a.innerHTML = key
+        document.getElementById("output-4").appendChild(div_a);
+
+        var div_b = document.createElement("div");
+        div_b.innerHTML = "Description: " + data.product_composite_response.items[0].general_description
+        document.getElementById("output-4").appendChild(div_b);
 
         var img_tag = new Image();
         img_tag.src = data.product_composite_response.items[0].image.internal_primary_image_url;
