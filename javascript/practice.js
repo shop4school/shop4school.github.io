@@ -10,7 +10,7 @@ $(document).ready(function () {
 
       success: function(json) {
         console.log(json);
-        $("#output-1").html(json.product_composite_response.items[O].online_description);
+        $("#output-1").html(json.product_composite_response.items[O].online_description.value);
         $("#output-2").html(json.product_composite_response.items[O].online_price.current_price);
         $("#output-3").html(json.product_composite_response.items[O].online_price.original_price);
         $("#output-4").html(json.product_composite_response.items[O].image.internal_primary_image_url);
