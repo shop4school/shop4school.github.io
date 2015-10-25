@@ -10,6 +10,7 @@ $(document).ready(function () {
 
       success: function(json) {
         console.log(json);
+        $("#output-1").html(json)
         $("#output-1").html(json.product_composite_response.items[O].class_id);
         $("#output-2").html(json.product_composite_response.items[O].online_price.current_price);
         $("#output-3").html(json.product_composite_response.items[O].online_price.original_price);
