@@ -12,8 +12,8 @@ $(document).ready(function () {
         console.log(data);
         img = data.product_composite_response.items[0].image.internal_primary_image_url
         $("#output-1").html(data.product_composite_response.items[0].general_description)
-        $("#output-1").html(data.product_composite_response.items[0].class_id);
-        $("#output-2").html(data.product_composite_response.items[0].online_price.current_price);
+        $("#output-2").html(data.product_composite_response.items[0].class_id);
+        $("#output-3").html(data.product_composite_response.items[0].online_price.current_price);
         $("#output-4").html(
           <img src="img">
 
