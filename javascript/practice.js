@@ -4,13 +4,14 @@ var array_of_items = {Tissues: 14736258, Scissors: 21454431, Glue_Sticks: 147960
 
 var api_call = function(dpci) {
 
+  var url = 'http://api.target.com/items/v3/' + array_of_items[key] + '?id_type=dpci&store_id=530&fields=ids,descriptions,locations,pricing,images&mode=online&key=1Kfdqvy6wHmvJ4LDyAVOl7saCBoKHcSb'
+
 $(document).ready(function () {
 
   $('button').click(function() {
 
     $.ajax ({
-      url: 'http://api.target.com/items/v3/055-02-3741?id_type=dpci&store_id=530&fields=ids,descriptions,locations,pricing,images&mode=online&key=1Kfdqvy6wHmvJ4LDyAVOl7saCBoKHcSb',
-      jsonpCallback: 'jsonCallback',
+      url: url,
       consentType: "application/json",
       dataType: 'jsonp',
 
