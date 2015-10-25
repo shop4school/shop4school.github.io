@@ -8,7 +8,7 @@ $(document).ready(function () {
       consentType: "application/json",
       dataType: 'jsonp',
 
-      if (status == succes) { function(json) {
+      if (status === succes) { function(json) {
         console.log(json);
         $("#output-1").html(json.items.online_description.value);
         $("#output-2").html(json.items.online_price.current_price);
