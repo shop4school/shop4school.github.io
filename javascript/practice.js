@@ -8,7 +8,7 @@ $(document).ready(function () {
       consentType: "application/json",
       dataType: 'jsonp',
 
-      succes: function(json) {
+      if (status == succes) { function(json) {
         console.log(json);
         $("#output-1").html(json.items.online_description.value);
         $("#output-2").html(json.items.online_price.current_price);
@@ -16,9 +16,10 @@ $(document).ready(function () {
         $("#output-4").html(json.items.image.internal_primary_image_url);
       }, //end success function
 
-      error: function(e) {
+      else { function(e) {
         console.log(e.message);
       } //end error function
+      } //end if
 
     }); // end AJAX
 
