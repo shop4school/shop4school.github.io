@@ -108,9 +108,9 @@ header{
   display: block;
   font-size: 2em;
   color: white;
-  width: 20%;
-  margin:auto;
-  height: 100px;
+  width: 30%;
+  margin:50px auto;
+  height: 50px;
   opacity: 0.8;
   background-color: #cc0000;
 }
