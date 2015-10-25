@@ -24,7 +24,7 @@ $(document).ready(function () {
 
         var container = document.createElement("div");
         container.setAttribute("class", "container");
-        container.innerHTML = {
+        container.innerHTML = (
 
             var img_tag = new Image();
             img_tag.src = data.product_composite_response.items[0].image.internal_primary_image_url;
@@ -42,7 +42,7 @@ $(document).ready(function () {
             div_a.setAttribute("class", "price")
             document.getElementById("output-4").appendChild(div_a);
 
-          }; // end container inner HTML
+          ); // end container inner HTML
 
 
         }, //end success function
