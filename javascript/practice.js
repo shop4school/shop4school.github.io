@@ -10,10 +10,10 @@ $(document).ready(function () {
 
       succes: function(json) {
         console.log(json);
-        $("#output").html(json.product_composite_response.items.online_description.value);
-        $("#output").html(json.product_composite_response.items.online_price.current_price);
-        $("#output").html(product_composite_response.items.online_price.original_price);
-        $("#output").html(json.product_composite_response.items.image.internal_primary_image_url);
+        $("#output-1").html(json.product_composite_response.items.online_description.value);
+        $("#output-2").html(json.product_composite_response.items.online_price.current_price);
+        $("#output-3").html(product_composite_response.items.online_price.original_price);
+        $("#output-4").html(json.product_composite_response.items.image.internal_primary_image_url);
       }, //end success function
 
       error: function(e) {
