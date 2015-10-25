@@ -21,13 +21,15 @@ $(document).ready(function () {
         // $("#output-2").html("Description: " + data.product_composite_response.items[0].general_description)
         // $("#output-3").html(data.product_composite_response.items[0].online_price.current_price);
 
-        var div_a = document.createElement("div");
-        div_a.innerHTML = key
-        document.getElementById("output-4").appendChild(div_a);
 
         var div_b = document.createElement("div");
-        div_b.innerHTML = "Description: " + data.product_composite_response.items[0].general_description
+        div_b.innerHTML = "Description: " + data.product_composite_response.items[0].general_description;
         document.getElementById("output-4").appendChild(div_b);
+
+        var div_a = document.createElement("div");
+        div_a.innerHTML = "Price: " + data.product_composite_response.items[0].online_price.current_price;
+        document.getElementById("output-4").appendChild(div_a);
+
 
         var img_tag = new Image();
         img_tag.src = data.product_composite_response.items[0].image.internal_primary_image_url;
