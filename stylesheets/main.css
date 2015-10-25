@@ -108,8 +108,8 @@ header{
   display: block;
   font-size: 2em;
   color: white;
-  width: 30%;
-  margin:50px auto;
+  width: 25%;
+  margin:auto;
   height: 50px;
   opacity: 0.8;
   background-color: #cc0000;
@@ -118,3 +118,20 @@ header{
   opacity: 1;
   background-color: #b50000;
 }
+.button-teacher{
+  position: relative;
+  display: block;
+  font-size: 2em;
+  width: 25%;
+  margin:auto;
+  height: 50px;
+  opacity: 0.8;
+  background-color: gray;
+  color: #000000;
+}
+.button-teacher:hover{
+  opacity: 1;
+  background-color: #gray;
+}
+.actions {display:inline;
+margin: auto}

@@ -1,7 +1,7 @@
 <html>
 <head>
   <title> Back to School 2015 </title>
-<meta charset="utf-8">
+<meta charset="utf-8"
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="javascript/api.js"></script>
 <!-- <link rel="stylesheet" type="text/css" href="stylesheets/target.css"> -->
@@ -29,14 +29,7 @@
     <img src="imgs/Blank-profile.jpg" class="fl-r pd-r main-image">
   </section>
 
-  <section>
-    <div class="col-12">
-      <button name="button" id="button" class="button">Generate list via API</button>
-    </div>
-    <br> <br>
-  </section>
-
-  <section id="main" class="main-list cl-b col-12">
+  <section class="main-list cl-b col-12">
 
     <div class="list-header">
       <div class="h-checkbox cellnb"> <input type="checkbox" class="select-all"> Select All </div>
@@ -46,9 +39,37 @@
       <div class="h-quantO cellnb"> Quantiy Ordered </div>
       <div class="h-price cellnb"> Price </div>
     </div>
-
-
     <div class="items-list">
+      <div class="checkbox cellb"> <input type="checkbox" class="item-checkbox">  </div>
+      <div class="image cellb"> <img src="http://scene7.targetimg1.com/is/image/Target/14151825?wid=410&hei=410" alt="binder" class="item-image"/> </div>
+      <div class="item cellb"> <a href="#" /> 64ct Crayons </a> </div>
+      <div class="quantR cellb"> 1 </div>
+      <div class="quantO cellb">
+          <select name="quant-selected">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+      </div>
+      <div class="price cellb"> 2.99 </div>
+    </div>
+    <div class="items-list">
+      <div class="checkbox cellb"> <input type="checkbox" class="item-checkbox">  </div>
+      <div class="image cellb"> <img src="http://scene7.targetimg1.com/is/image/Target/18817725?wid=410&hei=410" alt="binder" class="item-image"/> </div>
+      <div class="item cellb"> <a href="#" /> Decorative/fashion Notebook Mead 10.5" x 8" Black </a> </div>
+      <div class="quantR cellb"> 3 </div>
+      <div class="quantO cellb">
+          <select name="quant-selected">
+            <option value="1">3</option>
+            <option value="2">2</option>
+            <option value="3">1</option>
+            <option value="4">4</option>
+          </select>
+      </div>
+      <div class="price cellb"> 2.37 </div>
+    </div>
+        <div class="items-list">
       <div class="checkbox cellb"> <input type="checkbox" class="item-checkbox">  </div>
       <div class="image cellb"> <img src="http://scene7.targetimg1.com/is/image/Target/16909123?wid=410&hei=410" alt="binder" class="item-image"/> </div>
       <div class="item cellb"> <a href="#" />  Ecom Eraser Pink Papermate </a> </div>
@@ -63,17 +84,34 @@
       </div>
       <div class="price cellb"> 2.04 </div>
     </div>
-
-
-
-
+<hr> <strong>
+    <div class="list-header">
+      <div class="checkbox cellb">   </div>
+      <div class="image cellb"> </div>
+      <div class="item cellb"> Cart Total </div>
+      <div class="quantR cellb">  </div>
+      <div class="quantO cellb"> </div>
+      <div class="price cellb"> $7.40 </div>
+    </div>
     <br>
+
 
   </section>
 
- <form action="example.html">
-    <input type="submit" class="button" value="Create Supply List">
-  </form>
-
+<section>
+<!--    <div class="actions col-8 pd-r">
+-->
+       <form action="#">
+        <input type="submit" class="button" value="CHECKOUT ONLINE">
+      </form>
+     <form action="#">
+        <input type="submit" class="button" value="SHIP to STORE">
+      </form>
+      <form action="index.html">
+        <input type="submit" class="button-teacher" value="Edit Supply List">
+      </form>
+<!--   </div>
+ -->  <br> <br> <br>
+</section>
 </body>
 </html>
