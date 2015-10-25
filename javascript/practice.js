@@ -1,5 +1,5 @@
 
-var array_of_items = {Tissues: 14736258, Scissors: 21454431, Glue_Sticks: 14796082, Crayons: 14151825, Watercolor_Set: 14151836, Washable_Markers: 17133979, Pencils: 17081484, Wire_Notebook: 18817725, Erasers: 16909123, Folders: 23980910, Pencil_Box: 16974240, Hand_Soap: 14775581, Gallon_Bags: 12972028};
+var array_of_items = {Tissues: 253070129, Scissors: 081220936, Glue-Sticks: 081061653, Crayons: 081040343, Watercolor-Set: 081040600, Washable-Markers: 081041261, Pencils: 081021857, Wire-Notebook: 081011751, Erasers: 081021505, Folders: 081030706, Pencil Box: 081062910, Hand-Soap: 049001118, Gallon-Bags: 253010291};
 
 
 var api_call = function(dpci) {
