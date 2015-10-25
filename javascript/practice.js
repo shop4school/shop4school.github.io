@@ -1,10 +1,6 @@
 
 var array_of_items = {Tissues: 14736258, Scissors: 21454431, Glue_Sticks: 14796082, Crayons: 14151825, Watercolor_Set: 14151836, Washable_Markers: 17133979, Pencils: 17081484, Wire_Notebook: 18817725, Erasers: 16909123, Folders: 23980910, Pencil_Box: 16974240, Hand_Soap: 14775581, Gallon_Bags: 12972028};
 
-for (var key in array_of_items) {
-  api_call(array_of_items[key]);
-};
-
 
 api_call = function(dpci) {
 
@@ -43,3 +39,10 @@ $(document).ready(function () {
 
 }); // end ready
 }; // end api-call
+
+
+// ITERATES OVER ARRAY TO CALL API
+
+for (var key in array_of_items) {
+  api_call(array_of_items[key]);
+};
