@@ -10,14 +10,15 @@ $(document).ready(function () {
 
       success: function(data) {
         console.log(data);
-        var img = data.product_composite_response.items[0].image.internal_primary_image_url
         $("#output-1").html(data.product_composite_response.items[0].general_description)
         $("#output-2").html(data.product_composite_response.items[0].class_id);
         $("#output-3").html(data.product_composite_response.items[0].online_price.current_price);
-        $("#output-4").html(
-          '<img id="default" src="">'
-             ); // end img output
-          document.getElementById("default").setAttribute("id",img).setAttribute("src",img);
+
+        var img-tag = new Image();
+        img-tag.src = data.product_composite_response.items[0].image.internal_primary_image_url;
+        img-tag.setAttribute("class", "thumb-img");
+        img-tag.setAttribute("alt", "effy");
+        document.getElementById("output-4").appendChild(img-tag);
 
 
         }, //end success function
