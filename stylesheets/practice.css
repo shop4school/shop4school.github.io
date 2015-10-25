@@ -1,19 +1,21 @@
 thumb-img {
-  max-height: 3em;
+  height: 1.5em;
   position: relative;
   display: inline-block;
   clear: both;
 }
 
 description {
-  height: 3em;
+  height: 1.5em;
   position: relative;
   display: inline-block;
+  line-height: 1.5em;
 
 }
 
 price {
-  height: 3em;
+  height: 1.5em;
   position: relative;
   display: inline-block;
+  line-height: 1.5em;
 }
